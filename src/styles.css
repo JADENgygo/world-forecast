@@ -1,0 +1,47 @@
+:root {
+  --temperature: #b84714;
+  --humidity: #18734b;
+  --rain: #376cbd;
+}
+[data-bs-theme="dark"] {
+  --temperature: #ffa66d;
+  --humidity: #7ad9a6;
+  --rain: #85b6ff;
+}
+body {
+  min-width: 320px;
+}
+.btn {
+  transition: none;
+}
+.icon-button {
+  width: 44px;
+  height: 44px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+}
+.forecast-chart {
+  height: 240px;
+  min-width: 0;
+}
+.col,
+.card {
+  min-width: 0;
+}
+.temperature-color {
+  color: var(--temperature);
+}
+.humidity-color {
+  color: var(--humidity);
+}
+.rain-color {
+  color: var(--rain);
+}
+summary {
+  cursor: pointer;
+}
+summary:focus-visible {
+  outline: 2px solid var(--bs-primary);
+  outline-offset: 3px;
+}
