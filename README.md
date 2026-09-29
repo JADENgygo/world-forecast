@@ -29,6 +29,8 @@ E2EではAPIをモックし、通信結果によらず表示と操作を検証�
 Playwrightが起動したサーバーはテスト終了時に停止します。既存サーバーを再利用した場合は停止しません。
 `npm run format` で整形、`npm run test:e2e:ui` でテスト用UIを開けます。
 
+GitHub ActionsのCIは`dev`へのPR・push時と手動実行時に起動し、Node.js 24で上記のチェック、単体テスト、ビルド、ChromiumのE2Eテストを実行します。
+
 ## データと表示
 
 地点マスターはsrc/cities.tsにあります。日時はUTCのUnix時刻で取得し、各首都のタイムゾーンで表示します。

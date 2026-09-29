@@ -9,6 +9,7 @@
 React・TypeScript・Viteのアプリです。npmとpackage-lock.jsonで依存関係を管理し、
 Bootstrapで画面を構成します。単体テストはVitest、E2EはPlaywright、整形・静的解析はBiomeを使用します。
 開発サーバーはポート8000固定です。セットアップと実行手順はREADME.mdを参照してください。
+GitHub Actionsは`dev`へのPR・pushと手動実行で、Node.js 24上でBiome、Vitest、ビルド、Playwright（Chromium）を検証します。
 
 ## 作業方針
 
